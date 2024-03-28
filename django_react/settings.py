@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'Api',
     'rest_framework.authtoken',
+    'dj_rest_auth',
 ]
 
 REST_FRAMEWORK = {

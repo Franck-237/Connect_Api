@@ -1,4 +1,4 @@
-from django.urls  import path
+from django.urls  import path, include
 from . import views
 
 urlpatterns = [
@@ -8,4 +8,5 @@ urlpatterns = [
     path('todos/<int:pk>/complete', views.TodoToggleComplete.as_view()),
     path('signup/', views.signup),
     path('login/', views.login),
+    path('rest-auth/', include('dj_rest_auth.urls')),
 ]
